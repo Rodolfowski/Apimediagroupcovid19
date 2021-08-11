@@ -1,0 +1,41 @@
+<div class="card text-center">
+  <div class="card-body">
+
+    <form [formGroup]= "registroSection" (ngSubmit)= "onSubmit()">
+        <legend class="titleLegend"><h2>Selecione um pais:</h2></legend>
+         <div class="mb-3">
+          <select  name="country" formControlName="country">
+            <option *ngFor="let paises of todosOsPaises" value="{{paises}}">{{paises}}
+            </option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary personalButton">Pesquisar</button>
+    </form>
+  </div>
+
+<div class="card-deck personalCardStyle">
+  <div class="card col-sm-4 col-lg-4 card text-white bg-info mb-3" >
+    <div class="card-header">Confirmados</div>
+      <div class="card-body">
+      <h3 class="card-title">{{confirmed}}</h3>
+      </div>
+  </div>
+
+<div class="card col-sm-4 col-lg-4 card text-white bg-primary mb-3" >
+  <div class="card-header">Recuperados</div>
+    <div class="card-body">
+      <h3 class="card-title">{{recovered}}</h3>
+    </div>
+</div>
+
+<div class="card col-sm-4 col-lg-4 card text-white bg-secondary mb-3" >
+  <div class="card-header">Mortes</div>
+    <div class="card-body">
+      <h3 class="card-title">{{deaths}}</h3>
+    </div>
+  </div>
+</div>
+<div class="card-footer text-muted">
+    {{lastCountryViewed}}
+  </div>
+</div>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+.label {
+      font-size: large;
+      color: white;
+      padding: 8px;
+    }
+
+    .info {background-color: #2196F3;} /* Blue */
+    .danger {background-color: #f44336;} /* Red */
+    .success {background-color: #4CAF50;} /* Green */
+    .warning {background-color: #ff9800;} /* Orange */
+
+
+  input[type=text], select {
+      width: 50%;
+      padding: 10px 20px;
+      margin: 1em 0;
+      display: inline-block;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+.personalButton{
+  padding:20px 100px;
+  font-size: 25px;
+}
+.personalCardStyle{
+  font-size: 25px;
+}
+.titleLegend{
+  font-size: 30px;
+  background-color:#007bff;
+  color: #fff;
+  padding:20px;
+}
+
